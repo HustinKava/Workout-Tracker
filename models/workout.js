@@ -36,12 +36,12 @@ const workoutSchema = new Schema({
         duration: {
             type: Number,
             default: 0
+        },
+        distance: {
+            type: Number,
+            default: 0
         }
     }],
-    totalDuration: {
-        type: Number,
-        default: 0
-    }
 });
 
 // Creating our table name (workout) and implementing our schema (workoutSchema)
