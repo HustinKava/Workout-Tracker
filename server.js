@@ -25,7 +25,7 @@ mongoose.connect(
     }
 );
 
-// Requiring routes
+// Requiring route files
 app.use(require("./routes/api-routes.js"));
 app.use(require("./routes/html-routes.js"));
 
