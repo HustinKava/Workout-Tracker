@@ -16,9 +16,16 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // How to connect locally "mongodb://localhost/YOUR DATA BASE NAME"
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
+mongoose.connect(
+    process.env.MONGDB_URI || 'mongodb://localhost/workout', {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true,
+        useFindAndModify: false
+    }
+);
 
-// Requiring routes
+// Requiring route files
 app.use(require("./routes/api-routes.js"));
 app.use(require("./routes/html-routes.js"));
 
