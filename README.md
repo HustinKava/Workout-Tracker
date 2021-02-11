@@ -8,7 +8,7 @@ For homework assignment 17 I was tasked with creating a "Fitness Tracker" that e
 - [Technologies](#Technologies-Used)
 - [Installation](#Installation)
 - [Usage](#Usage)
-- [Screenshot](#Screenshot)
+- [Screenshots](#Screenshots)
 - [View Live Website](#View-Live-Website)
 - [Questions](#Questions)
 - [License](#License)
@@ -39,7 +39,10 @@ Server listening on: http://localhost:8080
 
 Simply copy paste http://localhost:8080 into a browser of your choice.
 
-## Screenshot
+## Screenshots
+Last workout information
+![](public/images/Screenshot2.PNG)
+Workout statistics 
 ![](public/images/Screenshot1.PNG)
 
 ## View Live Website  
