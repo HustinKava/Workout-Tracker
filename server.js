@@ -2,7 +2,6 @@
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
-const path = require("path");
 
 // Creating the port port
 const PORT = process.env.PORT || 8080;
