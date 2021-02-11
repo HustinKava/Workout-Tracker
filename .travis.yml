@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- stable
+npm: true
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: bg3UUmpnbPSNepyIryvXNpRZNVT5RA3b1upyNOQSz4DyR9e9+c5dAMIfJTUiQ8GikykQdM1UMX8h5KF6+vr8xJLHDI9P4srTpfKgLm3c7O/JQehdwsPfYxNUOYy+5eIk7xkQV10K9wlo9I9buOC2YmROjTtkt1nEkkbNJ4Bx6izG1L2ND5CM/1mgcwkbsj1Idg/2WgH07hHLpYQ6+fA8mPAXd04J+gbOeHo5XYu1eMf7I5eMGWE6aFvtG/bBL9D6SBIsDE0ZBvEVaBYpISl/D+1/CnVn25En8IlCAkdZ91b8tA5fUK0+6DTExLytE/cAKjWnIKThJT95nw5bELB1qco5sb0vG4qUJeTRE7X+8Kre2yXjs6mo/uWOF4DBCgkU+WPDc1rPI9OEqAJaSAWecMEFddYoILwc6eKu6AxlU9JEnxiA8yxcIa14acICX+7OklVTil9NTUApm+MjbYnJEGcPSyVtag60rMr2K9l5LVpu7YGAj2RkTtrF9Qh3toIAn9fPxLzXhfTD+we8GKwXcv59UgMpMc052hiPeIERAm/x+ojx/y61DmmUd9KEHSAyWjScdv+1aXHwGDq2PtBo2jY4NNZrI1s2NaleOZeMYE8fBUgYneyss0JF4cC3DfQVXKtSY7CV6TQdpYIie1s2RWt2OK43ZKpbTsPNXYN8q4A=
+  app: infinite-forest-17979
+  on:
+    all_branches: 'true'
+    repo: HustinKava/Workout-Tracker
+  skip_cleanup: 'true'
+script:
+- echo "skipping tests"
